@@ -1,0 +1,100 @@
+conky.config = {
+	background = true,
+	update_interval = 2,
+	cpu_avg_samples = 2,
+	net_avg_samples = 2,
+	out_to_console = false,
+	override_utf8_locale = true,
+	double_buffer = true,
+	no_buffers = true,
+	text_buffer_size = 32768,
+	imlib_cache_size = 0,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_argb_visual = true,
+	own_window_argb_value = 120,
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	border_inner_margin = 10,
+	border_outer_margin = 0,
+	xinerama_head = 2,
+	alignment = 'top_right',
+	gap_x = 13,
+	gap_y = 28,
+	draw_shades = true,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = false,
+	use_xft = true,
+	font = 'Droid Sans:size=11',
+	xftalpha = 0.8,
+	uppercase = false,
+	default_color = '#FFFFFF',
+	own_window_colour = '#000000',
+	minimum_width = 0, minimum_height = 0,
+	maximum_width = 470, 
+};
+
+conky.text = [[
+
+
+
+# NETWORK
+${font xirod:Bold:size=13}${#35BF5C}NETWORK ${hr 2}$font
+
+${font Droid Sans:Bold:size=12}${#35BF5C}NETWORK (GENERAL)${stippled_hr}$color$font
+$color$font
+Active Interface ${alignr}$gw_iface
+#Public IP${alignr} ${execi 3600 wget -O - http://ip.tupeux.com | tail}
+Gateway IP ${alignr}$gw_ip
+DNS ${alignr}$nameserver
+#TOR Status ${alignr}${if_running tor} Active${else}Disabled${endif}
+Firewall ${alignr}${exec systemctl status ufw | grep active | cut -c 11-27}
+Packets $alignr In:${tcp_portmon 1 32767 count}  Out: ${tcp_portmon 32768 61000 count}
+
+
+
+
+${font Droid Sans:Bold:size=11}${alignc}${#35BF5C}NETWORK (WIRELESS) ${stippled_hr}$font$color
+
+
+${font Droid Sans:Bold:size=11}wlp3s0 $font$alignr ${addr wlp3s0}$font
+SSID${font Droid Sans:size=11}${alignr}${wireless_essid wlp3s0}${font}
+Down: ${#ff0000}${downspeed wlp3s0}/s ${color}(${totaldown wlp3s0})${alignr}Up: ${#35BF5C}${upspeed wlp3s0}/s 
+$color(${totalup wlp3s0})
+
+${downspeedgraph wlp3s0 100,230  000000 ff0000} ${alignr}${upspeedgraph wlp3s0 100,230 000000 35BF5C}
+$alignr${#757575}
+#${color white}Link quality:    ${#35BF5C} ${wireless_link_bar 12,350 wlp3s0}$color
+
+
+
+# TCP & UDP     
+${font xirod:Bold:size=13}${#447EAC}CONNECTIONS ${hr 2}$font$color
+${font Droid Sans:Bold:size=11}Inbound Connections:  ${tcp_portmon 1 32767 count}  ${alignr} Local Service / Port$font
+   ${tcp_portmon 1 32767 rhost 0} ${alignr} $font${tcp_portmon 1 32767 lservice 0}
+   ${tcp_portmon 1 32767 rhost 1} ${alignr} ${tcp_portmon 1 32767 lservice 1}
+   ${tcp_portmon 1 32767 rhost 2} ${alignr} ${tcp_portmon 1 32767 lservice 2}
+   ${tcp_portmon 1 32767 rhost 3} ${alignr} ${tcp_portmon 1 32767 lservice 3}
+   ${tcp_portmon 1 32767 rhost 4} ${alignr} ${tcp_portmon 1 32767 lservice 4}
+   ${tcp_portmon 1 32767 rhost 4} ${alignr} ${tcp_portmon 1 32767 lservice 5}   
+${font Droid Sans:Bold:size=11}Outbound Connections:  ${tcp_portmon 32768 61000 count}  ${alignr} Remote Service / Port$font
+   ${tcp_portmon 32768 61000 rhost 0} ${alignr} ${tcp_portmon 32768 61000 rservice 0}
+   ${tcp_portmon 32768 61000 rhost 1} ${alignr} ${tcp_portmon 32768 61000 rservice 1}
+   ${tcp_portmon 32768 61000 rhost 2} ${alignr} ${tcp_portmon 32768 61000 rservice 2}
+   ${tcp_portmon 32768 61000 rhost 3} ${alignr} ${tcp_portmon 32768 61000 rservice 3}
+   ${tcp_portmon 32768 61000 rhost 4} ${alignr} ${tcp_portmon 32768 61000 rservice 4}
+   ${tcp_portmon 32768 61000 rhost 5} ${alignr} ${tcp_portmon 32768 61000 rservice 5}
+   ${tcp_portmon 32768 61000 rhost 6} ${alignr} ${tcp_portmon 32768 61000 rservice 6}
+   ${tcp_portmon 32768 61000 rhost 7} ${alignr} ${tcp_portmon 32768 61000 rservice 7}
+   ${tcp_portmon 32768 61000 rhost 8} ${alignr} ${tcp_portmon 32768 61000 rservice 8}
+   ${tcp_portmon 32768 61000 rhost 9} ${alignr} ${tcp_portmon 32768 61000 rservice 9}
+   ${tcp_portmon 32768 61000 rhost 10} ${alignr} ${tcp_portmon 32768 61000 rservice 10}
+   ${tcp_portmon 32768 61000 rhost 11} ${alignr} ${tcp_portmon 32768 61000 rservice 11}
+   ${tcp_portmon 32768 61000 rhost 12} ${alignr} ${tcp_portmon 32768 61000 rservice 12}
+   ${tcp_portmon 32768 61000 rhost 13} ${alignr} ${tcp_portmon 32768 61000 rservice 13}
+   ${tcp_portmon 32768 61000 rhost 14} ${alignr} ${tcp_portmon 32768 61000 rservice 14}
+
+${color orange}${font xirod:size=13}PACMAN LOG ${hr 2}$color$font ${execi 30 tail -n15 /var/log/pacman.log}
+
+]];
+
