@@ -45,10 +45,10 @@ URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline:bold:italic:pixelsize=17
 
 
 !DejaVu Sans
-!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=16:antialias=true:hinting=true
-!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=16:antialias=true:hinting=true
-!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=16:antialias=true:hinting=true
-!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=16:antialias=true
+!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=15:antialias=true:hinting=true
+!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=15:antialias=true:hinting=true
+!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=15:antialias=true:hinting=true
+!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=15:antialias=true
 
 
 ! Tamsyn
@@ -110,10 +110,11 @@ URxvt.keysym.Control-Shift-C: perl:clipboard:copy
 URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
 ! Black
-URxvt.color0:  #000000
+URxvt.color0:  #5c5c5c
 URxvt.color8:  #4c4c4c
 ! Red
-URxvt.color1:  #cd0000
+!URxvt.color1:  #cd0000
+URxvt.color1: #ff4d4d
 URxvt.color9:  #ff0000
 ! Green
 URxvt.color2:  #00cd00
@@ -122,7 +123,7 @@ URxvt.color10: #00ff00
 URxvt.color3:  #cdcd00
 URxvt.color11: #ffff00
 ! Blue
-URxvt.color4:  #1e90ff
+URxvt.color4:  #447EAC
 URxvt.color12: #4682b4
 ! Magenta
 URxvt.color5:  #cd00cd
