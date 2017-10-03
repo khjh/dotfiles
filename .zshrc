@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="powerline-blue"
+ZSH_THEME="kent"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -99,11 +99,14 @@ alias cdA='cd /home/khjh/.config/awesome/'
 alias cdT='cd /home/khjh/.config/awesome/themes/khjh'
 alias eT='vim /home/khjh/.config/awesome/themes/khjh/theme.lua'
 alias eW='vim /home/khjh/.config/awesome/wi.lua'
-alias eC='vim /home/khjh/.config/awesome/conky/conkyrc'
+
+
 ## Arch logs
 alias J='clear && journalctl -fo short'
 alias P='clear && tail -f /var/log/pacman.log'
 
+## i3 Stuff
+alias eI='vim /home/khjh/.i3/config'
 
 ## Gentoo logs
 alias F='tail -f /var/log/emerge-fetch.log'
@@ -182,4 +185,4 @@ alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-clear && archey3
+clear

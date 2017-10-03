@@ -24,21 +24,22 @@ text_buffer_size 2048
 # - Window specifications - #
 #############################
 own_window yes
-own_window_type desktop
+own_window_type override
 own_window_transparent no
-own_window_hints below,skip_taskbar,skip_pager
+own_window_hints undecorated,below,skip_taskbar,skip_pager
+
+border_width 0
 
 own_window_colour 000000
 own_window_argb_visual yes
-own_window_argb_value 150
-
+own_window_argb_value 120
+draw_shades no
 alignment tl
-gap_y 44
-gap_x 15
+gap_y 38
+gap_x 10
 border_inner_margin 8
 draw_outline no
 draw_borders no
-
 minimum_size 470 700
 maximum_width 470
 maximum_height 600
@@ -66,7 +67,6 @@ ${font xirod:Bold:size=28}${color1}$alignc ARCH ${color}LINUX$font
 # CPU
 ${font xirod:Bold:size=13}${color7}CPU ${hr 2}$font$color
 
-
 ${font}Core 0   ${color1}${execi 30 sensors | grep 'Core 0:' | cut -c18-19}°C${color}  @  ${cpu cpu1} % $alignr ${color6}${cpubar cpu1}${color}
 ${font}Core 1   ${color1}${execi 30 sensors | grep 'Core 1:' | cut -c18-19}°C${color}  @  ${cpu cpu2} % $alignr ${color6}${cpubar cpu2}${color}
 ${font}Core 2   ${color1}${execi 30 sensors | grep 'Core 2:' | cut -c18-19}°C${color}  @  ${cpu cpu3} % $alignr ${color6}${cpubar cpu3}${color}
@@ -75,7 +75,6 @@ ${font}Core 4   ${color1}${execi 30 sensors | grep 'Core 0:' | cut -c18-19}°C${
 ${font}Core 5   ${color1}${execi 30 sensors | grep 'Core 1:' | cut -c18-19}°C${color}  @  ${cpu cpu6} % $alignr ${color6}${cpubar cpu6}${color}
 ${font}Core 6   ${color1}${execi 30 sensors | grep 'Core 2:' | cut -c18-19}°C${color}  @  ${cpu cpu7} % $alignr ${color6}${cpubar cpu7}${color}
 ${font}Core 7   ${color1}${execi 30 sensors | grep 'Core 3:' | cut -c18-19}°C${color}  @  ${cpu cpu8} % $alignr ${color6}${cpubar cpu8}${color}
-
 
 Core 0${alignr}Core1 
 ${cpugraph cpu1 35,230 000000 757575} ${alignr}${cpugraph cpu2 35,230 000000 757575}
@@ -87,11 +86,8 @@ Core 6${alignr}Core 7
 ${cpugraph cpu6 35,230 000000 757575} ${alignr}${cpugraph cpu7 35,230 000000 757575}
 
 
-
-
 # LOAD
 ${font xirod:Bold:size=13}${color7}LOAD ${hr 2}$font${color}
-
 
 ${font Droid Sans:bold:size=11}CPU ${hr 1}
        ${running_processes} / $processes ${goto 260}(%) PID${goto 362}CPU $alignr MEM$font
@@ -122,7 +118,6 @@ ${color5}${font Droid Sans:bold:size=11}RAM$font$color
 #${color5}${font Droid Sans:bold:size=8}SWAP$font$color
 #       $swap / $swapmax $alignr $swapperc %
 #       ${color6}${swapbar 10,330 /}$color
-
 
 
 # HDD

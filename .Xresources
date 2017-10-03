@@ -21,9 +21,10 @@ URxvt.scrollTtyKeypress: true
 
 URxvt*depth:32
 URxvt*foreground:#ADADAD
-URxvt*background:rgba:0600/0600/0600/dddd
-!URxvt*background:rgba:0600/0600/0600/eeee
+URxvt*background:rgba:0000/0000/0000/dddd
+!URxvt*background:#000000
 URxvt.foreground: 15
+!URxvt.foreground: #ADADAD
 URxvt.geometry: 128x38
 
 ! Test font settings
@@ -37,18 +38,17 @@ URxvt.geometry: 128x38
 
 
 
-!Droid Sans
+!!DejaVu Sans
+!URxvt.font: xft:Dejavu Sans Mono for Powerline:pixelsize=16:antialias=true:hinting=true
+!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=16:antialias=true:hinting=true
+!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=16:antialias=true:hinting=true
+!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=16:antialias=true
+
+!!Droid Sans
 URxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=17:antialias=true:hinting=true
 URxvt.boldFont: xft:Droid Sans Mono for Powerline:bold:pixelsize=17:antialias=true:hinting=true
 URxvt.italicFont: xft:Droid Sans Mono for Powerline:italic:pixelsize=17:antialias=true:hinting=true
 URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline:bold:italic:pixelsize=17:antialias=true
-
-
-!DejaVu Sans
-!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=15:antialias=true:hinting=true
-!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=15:antialias=true:hinting=true
-!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=15:antialias=true:hinting=true
-!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=15:antialias=true
 
 
 ! Tamsyn
@@ -106,31 +106,39 @@ URxvt.url-select.button:   1
 !URxvt.clipboard.copycmd:  xsel --input  --clipboard
 !URxvt.clipboard.pastecmd: xsel --output --clipboard
 
-URxvt.keysym.Control-Shift-C: perl:clipboard:copy
-URxvt.keysym.Control-Shift-V: perl:clipboard:paste
+!URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+!URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
-! Black
-URxvt.color0:  #5c5c5c
-URxvt.color8:  #4c4c4c
-! Red
-!URxvt.color1:  #cd0000
-URxvt.color1: #ff4d4d
-URxvt.color9:  #ff0000
-! Green
-URxvt.color2:  #00cd00
-URxvt.color10: #00ff00
-! Yellow
-URxvt.color3:  #cdcd00
-URxvt.color11: #ffff00
-! Blue
-URxvt.color4:  #447EAC
-URxvt.color12: #4682b4
-! Magenta
-URxvt.color5:  #cd00cd
-URxvt.color13: #ff00ff
-! Cyan
-URxvt.color6:  #00cdcd
-URxvt.color14: #00ffff
-! White
-URxvt.color7:  #cfcfcf
-URxvt.color15: #a8a8a8
+
+
+! black
+Urxvt.color0:       #282a2e
+URxvt.color8:       #373b41
+
+! red
+URxvt.color1:       #a54242
+URxvt.color9:       #cc6666
+
+! green
+URxvt.color2:       #8c9440
+URxvt.color10:      #b5bd68
+
+! yellow
+URxvt.color3:       #de935f
+URxvt.color11:      #f0c674
+
+! blue
+URxvt.color4:       #5f819d
+URxvt.color12:      #81a2be
+
+! magenta
+URxvt.color5:       #85678f
+URxvt.color13:      #b294bb
+
+! cyan
+URxvt.color6:       #5e8d87
+URxvt.color14:      #8abeb7
+
+! white
+URxvt.color7:       #707880
+URxvt.color15:      #c5c8c6

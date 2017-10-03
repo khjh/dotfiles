@@ -203,3 +203,4 @@ nnoremap <c-n> :call NumberToggle()<cr>
     nnoremap k gk
 
 " vim: set ft=vim :
+set clipboard=unnamedplus

@@ -10,17 +10,18 @@ conky.config = {
 	text_buffer_size = 32768,
 	imlib_cache_size = 0,
 	own_window = true,
-	own_window_type = 'desktop',
+	own_window_type = 'override',
 	own_window_argb_visual = true,
-	own_window_argb_value = 180,
+	own_window_argb_value = 120,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
-	border_inner_margin = 10,
+	border_inner_margin = 8,
+	border_width = 0,
 	border_outer_margin = 0,
 	xinerama_head = 2,
 	alignment = 'top_right',
-	gap_x = 19,
-	gap_y = 45,
-	draw_shades = true,
+	gap_x = 12,
+	gap_y = 39,
+	draw_shades = false,
 	draw_outline = false,
 	draw_borders = false,
 	draw_graph_borders = false,
@@ -94,7 +95,7 @@ ${font Droid Sans:Bold:size=11}Outbound Connections:  ${tcp_portmon 32768 61000 
    ${tcp_portmon 32768 61000 rhost 13} ${alignr} ${tcp_portmon 32768 61000 rservice 13}
    ${tcp_portmon 32768 61000 rhost 14} ${alignr} ${tcp_portmon 32768 61000 rservice 14}
 
-${color orange}${font xirod:size=13}PACMAN LOG ${hr 2}$color$font ${execi 30 tail -n15 /var/log/pacman.log}
+${color orange}${font xirod:size=13}PACMAN LOG ${hr 2}$color$font ${execi 30 tail -n8 /var/log/pacman.log}
 
 ]];
 
