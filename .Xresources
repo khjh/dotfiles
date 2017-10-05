@@ -21,10 +21,10 @@ URxvt.scrollTtyKeypress: true
 
 URxvt*depth:32
 URxvt*foreground:#ADADAD
-URxvt*background:rgba:0000/0000/0000/dddd
-!URxvt*background:#000000
+URxvt*background:rgba:0000/0000/0000/cccc
+!URxvt*background: #cc121212
+!URxvt*background:rgba:0600/0600/0600/eeee
 URxvt.foreground: 15
-!URxvt.foreground: #ADADAD
 URxvt.geometry: 128x38
 
 ! Test font settings
@@ -38,17 +38,22 @@ URxvt.geometry: 128x38
 
 
 
-!!DejaVu Sans
-!URxvt.font: xft:Dejavu Sans Mono for Powerline:pixelsize=16:antialias=true:hinting=true
-!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=16:antialias=true:hinting=true
-!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=16:antialias=true:hinting=true
-!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=16:antialias=true
 
-!!Droid Sans
-URxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=17:antialias=true:hinting=true
-URxvt.boldFont: xft:Droid Sans Mono for Powerline:bold:pixelsize=17:antialias=true:hinting=true
-URxvt.italicFont: xft:Droid Sans Mono for Powerline:italic:pixelsize=17:antialias=true:hinting=true
-URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline:bold:italic:pixelsize=17:antialias=true
+
+
+
+!Droid Sans
+!URxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=17:antialias=true:hinting=true
+!URxvt.boldFont: xft:Droid Sans Mono for Powerline:bold:pixelsize=17:antialias=true:hinting=true
+!URxvt.italicFont: xft:Droid Sans Mono for Powerline:italic:pixelsize=17:antialias=true:hinting=true
+!URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline:bold:italic:pixelsize=17:antialias=true
+
+
+!DejaVu Sans
+URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=17:antialias=true:hinting=true
+URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=17:antialias=true:hinting=true
+URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=17:antialias=true:hinting=true
+URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=17:antialias=true
 
 
 ! Tamsyn
@@ -106,39 +111,33 @@ URxvt.url-select.button:   1
 !URxvt.clipboard.copycmd:  xsel --input  --clipboard
 !URxvt.clipboard.pastecmd: xsel --output --clipboard
 
-!URxvt.keysym.Control-Shift-C: perl:clipboard:copy
-!URxvt.keysym.Control-Shift-V: perl:clipboard:paste
+URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
 
+!Black
+URxvt.color0:     #101010
+URxvt.color8:     #404040
+!red
+URxvt.color1:     #E84F4F
+URxvt.color9:     #D23D3D
+!green
+URxvt.color2:     #B8D68C
+URxvt.color10:    #A0CF5D
+!yellow
+URxvt.color3:     #E1AA5D
+URxvt.color11:    #F39D21
+!blue
+URxvt.color4:     #7DC1CF
+URxvt.color12:    #4E9FB1
+!magenta
+URxvt.color5:     #9B64FB
+URxvt.color13:    #8542FF
+!cyan
+URxvt.color6:     #6D878D
+URxvt.color14:    #42717B
+!white
+URxvt.color7:     #dddddd
+URxvt.color15:    #dddddd
 
-! black
-Urxvt.color0:       #282a2e
-URxvt.color8:       #373b41
 
-! red
-URxvt.color1:       #a54242
-URxvt.color9:       #cc6666
-
-! green
-URxvt.color2:       #8c9440
-URxvt.color10:      #b5bd68
-
-! yellow
-URxvt.color3:       #de935f
-URxvt.color11:      #f0c674
-
-! blue
-URxvt.color4:       #5f819d
-URxvt.color12:      #81a2be
-
-! magenta
-URxvt.color5:       #85678f
-URxvt.color13:      #b294bb
-
-! cyan
-URxvt.color6:       #5e8d87
-URxvt.color14:      #8abeb7
-
-! white
-URxvt.color7:       #707880
-URxvt.color15:      #c5c8c6
