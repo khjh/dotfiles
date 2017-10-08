@@ -20,11 +20,11 @@ URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
 
 URxvt*depth:32
-URxvt*foreground:#ADADAD
-URxvt*background:rgba:0000/0000/0000/cccc
-!URxvt*background: #cc121212
+URxvt.foreground:#576d24
+!URxvt.foreground:#ADADAD
+URxvt*background:rgba:0000/0000/0000/dddd
 !URxvt*background:rgba:0600/0600/0600/eeee
-URxvt.foreground: 15
+!URxvt.foreground: 15
 URxvt.geometry: 128x38
 
 ! Test font settings
@@ -56,8 +56,8 @@ URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=17:antiali
 URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=17:antialias=true
 
 
-! Tamsyn
-!URxvt.font: xft:Tamsyn:pixelsize=16:antialias=true:hinting=true
+! SourceCode Pro
+!URxvt.font: xft:SourceCodePro-Regular:pixelsize=17:antialias=true:hinting=true
 !URxvt.boldFont: xft: Tamsyn:bold:pixelsize=16:antialias=true:hinting=true
 !URxvt.italicFont: xft:Tamsyn:italic:pixelsize=16:antialias=true:hinting=true
 !URxvt.boldItalicFont: xft:Tamsyn:bold:italic:pixelsize=16:antialias=true
@@ -115,29 +115,38 @@ URxvt.keysym.Control-Shift-C: perl:clipboard:copy
 URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
 
-!Black
-URxvt.color0:     #101010
-URxvt.color8:     #404040
+
+
+
+
+
+!black
+URxvt.color0:     #393939
+!URxvt.color8:     #AF875F
+URxvt.color8:	  #4c4c4c
 !red
-URxvt.color1:     #E84F4F
-URxvt.color9:     #D23D3D
+URxvt.color1:     #BF1E2D
+URxvt.color9:     #E7212A
 !green
-URxvt.color2:     #B8D68C
-URxvt.color10:    #A0CF5D
+URxvt.color2:     #9DBA3A
+URxvt.color10:	  #576d24
+!URxvt.color10:    #A9C938
 !yellow
-URxvt.color3:     #E1AA5D
-URxvt.color11:    #F39D21
+URxvt.color3:     #F5B915
+URxvt.color11:    #F7D325
 !blue
-URxvt.color4:     #7DC1CF
-URxvt.color12:    #4E9FB1
+URxvt.color4:     #1CA1DB
+URxvt.color12:    #00AFDA
 !magenta
-URxvt.color5:     #9B64FB
-URxvt.color13:    #8542FF
+URxvt.color5:     #652F90
+URxvt.color13:    #894E9F
 !cyan
-URxvt.color6:     #6D878D
-URxvt.color14:    #42717B
+!URxvt.color6:     #EA7D24
+URxvt.color6:	  #2aa198
+URxvt.color14:    #F79321
 !white
-URxvt.color7:     #dddddd
-URxvt.color15:    #dddddd
+URxvt.color7:     #E7E8E9
+Urxvt.color15:    #F3F3F4
+
 
 
