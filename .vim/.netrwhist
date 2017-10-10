@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/khjh/.screenlayout'
-let g:netrw_dirhist_2='/home/khjh/.weechat'
-let g:netrw_dirhist_3='/home/khjh/Git/.conky/HUD'
-let g:netrw_dirhist_4='/home/khjh/.config'
-let g:netrw_dirhist_5='/home/khjh/.config/cava'
-let g:netrw_dirhist_6='/home/khjh/.screenlayout'
-let g:netrw_dirhist_7='/home/khjh/Git/.conky/HUD'
-let g:netrw_dirhist_8='/home/khjh/Git/.oh-my-zsh/themes'
-let g:netrw_dirhist_9='/home/khjh/.old_config/awesome/blingbling'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/khjh/Git/.oh-my-zsh/themes'
+let g:netrw_dirhist_2='/home/khjh/Git/.conky/HUD'

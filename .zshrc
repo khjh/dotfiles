@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="spaceship"
+ZSH_THEME="powerline"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -107,6 +107,10 @@ alias P='clear && tail -f /var/log/pacman.log'
 
 ## i3 Stuff
 alias eI='vim /home/khjh/.i3/config'
+alias eP='vim /home/khjh/.config/polybar/config'
+alias eR='vim /home/khjh/.i3/rofi.conf'
+alias cdI='cd /home/khjh/.i3/'
+alias Wname='xprop' ## get name of window
 
 ## Gentoo logs
 alias F='tail -f /var/log/emerge-fetch.log'
@@ -148,7 +152,8 @@ alias whogs='sudo nethogs wlp3s0'
 alias ehogs='sudo nethogs enp0s25'
 alias vhogs='sudo nethogs vpn0'
 alias mon='nbwmon'
-alias bmon='sudo wavemon'
+alias smon='slurm -i wlp3s0' #realtime network monitor
+alias bmon='sudo wavemon' #network quality
 alias wifi='nm-applet'
 alias toggle-wifi='sudo ifconfig wlp3s0 down && sudo ifconfig wlp3s0 up'
 alias wlanspeed='speedometer -r wlp3s0 -t wlp3s0'
@@ -185,7 +190,6 @@ alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-clear
+clear && /home/khjh/Scripts/pacman.sh
 
 
-source "/home/khjh/.oh-my-zsh/custom/themes/spaceship.zsh-theme"

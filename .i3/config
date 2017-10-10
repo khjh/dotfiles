@@ -41,8 +41,8 @@ font pango:System San Francisco Display 10
 #Needed for i3-gaps
 #hide_edge_borders both
 for_window [class="^.*"] border pixel 2
-gaps inner 15
-gaps outer 15
+gaps inner 10
+gaps outer 0
 new_window 1pixel
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -54,8 +54,10 @@ for_window [instance="nitrogen"] floating enable
 for_window [instance="gimp"] floating enable
 for_window [instance="feh"] floating enable
 for_window [instance="Thunar"] floating enable
-for_window [instance="teamviewer"] floating enable
+#for_window [instance="teamviewer"] floating enable
 for_window [instance="Steam"] floating enable
+for_window [instance="lxappearance"] floating enable
+
 
 
 set $browser google-chrome-stable
@@ -70,17 +72,6 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run
 bindsym $mod+F2 exec rofi -show run -config /home/khjh/.i3/rofi.conf
  
-#bindsym $mod+d exec --no-startup-id i3-demnu-desktop
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
-# change focus
-#bindsym $mod+h focus left
-#bindsym $mod+j focus down
-#bindsym $mod+k focus up
-#bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -127,13 +118,6 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 
-
-# Startup Programs
-  exec --no-startup-id nm-applet
- exec_always --no-startup-id mopidy
-  #exec --no-startup-id dropbox
-  #exec_always --no-startup-id feh --bg-scale ~/.wallpaper.png
-
 set $workspace1 "1"
 set $workspace2 "2"
 set $workspace3 "3"
@@ -143,7 +127,6 @@ set $workspace6 "6"
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
-set $workspace10 "10"
 
 set $monitor2 DP-0
 workspace 9 output $monitor2
@@ -158,7 +141,6 @@ bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -170,7 +152,6 @@ bindsym $mod+Shift+6 move container to workspace $workspace6
 bindsym $mod+Shift+7 move container to workspace $workspace7
 bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace10
 
 
 assign [class="Firefox"] $workspace1
@@ -275,6 +256,11 @@ exec_always --no-startup-id nitrogen --restore
 #exec_always gsettings set org.gnome.desktop.background show-desktop-icons false
 #exec_always gsettings set org.nemo.desktop show-desktop-icons false
 
-exec_always compton -f
+
+# Startup programs
+exec_always --no-startup-id "compton --config ~/.config/compton.conf"
 exec_always --no-startup-id /usr/local/bin/beep
 exec_always --no-startup-id /usr/bin/xfce4-power-manager
+exec_always --no-startup-id /home/khjh/.config/awesome/autostart.sh
+exec --no-startup-id nm-applet
+exec_always --no-startup-id mopidy
