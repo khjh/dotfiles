@@ -25,7 +25,7 @@ text_buffer_size 2048
 #############################
 own_window yes
 own_window_class Conky
-own_window_type override
+own_window_type desktop
 #own_window_type desktop
 #own_window_hints below,skip_taskbar,skip_pager
 

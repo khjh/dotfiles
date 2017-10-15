@@ -21,8 +21,8 @@ URxvt.scrollTtyKeypress: true
 
 URxvt*depth:32
 URxvt*foreground:#ADADAD
-!URxvt*background:rgba:0600/0600/0600/dddd
-URxvt*background:rgba:0000/0000/0000/cccc
+URxvt*background:rgba:0000/0000/0000/dddd
+!URxvt*background:rgba:0600/0600/0600/eeee
 URxvt.foreground: 15
 URxvt.geometry: 128x38
 
@@ -37,22 +37,17 @@ URxvt.geometry: 128x38
 
 
 
-
-
-
-
 !Droid Sans
 URxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=18:antialias=true:hinting=true
 URxvt.boldFont: xft:Droid Sans Mono for Powerline:bold:pixelsize=18:antialias=true:hinting=true
 URxvt.italicFont: xft:Droid Sans Mono for Powerline:italic:pixelsize=18:antialias=true:hinting=true
 URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline:bold:italic:pixelsize=18:antialias=true
 
-
 !DejaVu Sans
-!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=17:antialias=true:hinting=true
-!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=17:antialias=true:hinting=true
-!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=17:antialias=true:hinting=true
-!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=17:antialias=true
+!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=15:antialias=true:hinting=true
+!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=15:antialias=true:hinting=true
+!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=15:antialias=true:hinting=true
+!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=15:antialias=true
 
 
 ! Tamsyn
@@ -115,25 +110,26 @@ URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
 ! Black
 URxvt.color0:  #000000
-URxvt.color8:  #4c4c4c
+URxvt.color8:  #404040
 ! Red
-URxvt.color1:  #cd0000
-URxvt.color9:  #ff0000
+URxvt.color1:  #894853
+URxvt.color9:  #c59929a
 ! Green
-URxvt.color2:  #00cd00
-URxvt.color10: #00ff00
+URxvt.color2:  #538948
+URxvt.color10: #9ac592
 ! Yellow
-URxvt.color3:  #cdcd00
-URxvt.color11: #ffff00
+URxvt.color3:  #B3B784
+URxvt.color11: #CAE682
 ! Blue
-URxvt.color4:  #1e90ff
-URxvt.color12: #4682b4
+URxvt.color4:  #485389
+!URxvt.color12: #929ac5
+URxvt.color12: #485389
 ! Magenta
-URxvt.color5:  #cd00cd
-URxvt.color13: #ff00ff
+URxvt.color5:  #93A2CC
+URxvt.color13: #A893CC
 ! Cyan
-URxvt.color6:  #00cdcd
-URxvt.color14: #00ffff
+URxvt.color6:  #87AFD7
+URxvt.color14: #53DCCD
 ! White
 URxvt.color7:  #cfcfcf
 URxvt.color15: #a8a8a8

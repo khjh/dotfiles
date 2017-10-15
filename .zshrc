@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="powerline"
+ZSH_THEME="kent"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -23,7 +23,7 @@ export PATH="/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:
 #export NMON=cmknt
 export EDITOR="vim"
 export PAGER="less"
-export BROWSER="google-chrome-stable"
+export BROWSER="firefox"
 export MOVPLAY="cvlc"
 
 
@@ -46,11 +46,10 @@ alias downloads='cd /home/khjh/Downloads'
 alias info='inxi -F'
 alias Fonts='fc-cache -vf ~/.fonts/'
 alias grepa='cat /home/khjh/.config/awesome/rc.lua | grep'
-alias G='grep -rnw' ##search files
+alias G='grep -rnw' ##search content in files
 alias CH='sudo chown -R khjh:users /home/khjh'
 alias DU='sudo ncdu' ## disk usage
 alias k='exit'
-alias TW='cd /home/khjh/apps/teamviewer9/ && ./teamviewer'
 alias MC='mc -b'
 alias te='trash-empty'
 alias tl='trash-list'
@@ -137,21 +136,12 @@ alias xz='tar -xJf'
 alias bz='tar -xvjf'
 alias bz2='tar -jxvf'
 
-## Remote Desktop & Vpn
-alias kent='/home/khjh/Documents/remote/khjh.sh'
-alias term='/home/khjh/Documents/remote/term01.sh'
-alias server='/home/khjh/Documents/remote/home.sh'
-alias kentlocal='/home/khjh/Documents/remote/localscreen/khjh.sh'
-alias termlocal='/home/khjh/Documents/remote/localscreen/term01.sh'
-alias vpn='/home/khjh/Documents/remote/vpn_scripts/vpnstartup.sh'
-alias twd='sudo systemctl start teamviewerd.service'
-alias vpnse='/home/khjh/Scripts/vpn_sweden.sh'
 
 ## Net
 alias whogs='sudo nethogs wlp3s0'
 alias ehogs='sudo nethogs enp0s25'
 alias vhogs='sudo nethogs vpn0'
-alias mon='nbwmon'
+alias mon='nbwmon -i wlp3s0 -d 1'
 alias smon='slurm -i wlp3s0' #realtime network monitor
 alias bmon='sudo wavemon' #network quality
 alias wifi='nm-applet'
@@ -168,21 +158,13 @@ alias mixer='alsamixer --no-color'
 alias news='newsbeuter'
 alias tm='tmux'
 alias sw='telnet towel.blinkenlights.nl'
-alias reddit='cortex'
-alias music='sh /home/khjh/Scripts/music.sh & '
-alias Pods='cd /home/khjh/Podcasts && ranger'
+alias reddit='rtv'
 alias V='cvlc'
 alias img='viewnior'
 alias ee='mousepad'
-alias Steam='LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib32/opengl/nvidia/lib" steam'
 alias clock='tty-clock -c -s -C 4'
 alias nzb='/opt/sabnzbd/SABnzbd.py'
-
-## Livestreamer
-alias live-joe-rogan='livestreamer http://www.ustream.tv/joerogan mobile_360p'
-alias live-lol-dream-league='livestreamer http://www.twitch.tv/dreamleague source'
-alias live-wow-reckful='livestreamer http://www.twitch.tv/reckful source'
-
+alias win10res='VBoxManage controlvm "win10" setvideomodehint 2200 1350 32'
 
 
 
@@ -190,6 +172,5 @@ alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-clear && /home/khjh/Scripts/pacman.sh
-
+clear
 
