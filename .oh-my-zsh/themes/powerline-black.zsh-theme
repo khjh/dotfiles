@@ -101,11 +101,11 @@ ZSH_THEME_GIT_PROMPT_DIVERGED=" ⬍"
 if [ $(id -u) -eq 0 ]; then
     POWERLINE_SEC1_BG=%K{red}
     POWERLINE_SEC1_FG=%F{red}
-	POWERLINE_SEC1_TXT=%F{white}
-else
-    POWERLINE_SEC1_BG=%K{green}
-    POWERLINE_SEC1_FG=%F{green}
 	POWERLINE_SEC1_TXT=%F{black}
+else
+    POWERLINE_SEC1_BG=%K{black}
+    POWERLINE_SEC1_FG=%F{black}
+	POWERLINE_SEC1_TXT=%F{white}
 fi
 if [ "$POWERLINE_DETECT_SSH" != "" ]; then
   if [ -n "$SSH_CLIENT" ]; then

@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="kent"
+ZSH_THEME="kent-green"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -107,7 +107,6 @@ alias P='clear && tail -f /var/log/pacman.log'
 ## i3 Stuff
 alias eI='vim /home/khjh/.i3/config'
 alias eP='vim /home/khjh/.config/polybar/config'
-alias eR='vim /home/khjh/.i3/rofi.conf'
 alias cdI='cd /home/khjh/.i3/'
 alias Wname='xprop' ## get name of window
 
@@ -165,12 +164,10 @@ alias ee='mousepad'
 alias clock='tty-clock -c -s -C 4'
 alias nzb='/opt/sabnzbd/SABnzbd.py'
 alias win10res='VBoxManage controlvm "win10" setvideomodehint 2200 1350 32'
-
-
+alias eR='vim /home/khjh/.config/ranger/rc.conf'
 
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 clear
-

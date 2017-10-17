@@ -20,11 +20,10 @@ URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
 
 URxvt*depth:32
-URxvt.foreground:#576d24
-!URxvt.foreground:#ADADAD
+URxvt*foreground:#ADADAD
 URxvt*background:rgba:0000/0000/0000/dddd
 !URxvt*background:rgba:0600/0600/0600/eeee
-!URxvt.foreground: 15
+URxvt.foreground: 15
 URxvt.geometry: 128x38
 
 ! Test font settings
@@ -38,10 +37,6 @@ URxvt.geometry: 128x38
 
 
 
-
-
-
-
 !Droid Sans
 URxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=18:antialias=true:hinting=true
 URxvt.boldFont: xft:Droid Sans Mono for Powerline:bold:pixelsize=18:antialias=true:hinting=true
@@ -50,14 +45,14 @@ URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline:bold:italic:pixelsize=18
 
 
 !DejaVu Sans
-!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=18:antialias=true:hinting=true
-!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=18:antialias=true:hinting=true
-!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=18:antialias=true:hinting=true
-!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=18:antialias=true
+!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=15:antialias=true:hinting=true
+!URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=15:antialias=true:hinting=true
+!URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=15:antialias=true:hinting=true
+!URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=15:antialias=true
 
 
-! SourceCode Pro
-!URxvt.font: xft:SourceCodePro-Regular:pixelsize=17:antialias=true:hinting=true
+! Tamsyn
+!URxvt.font: xft:Tamsyn:pixelsize=16:antialias=true:hinting=true
 !URxvt.boldFont: xft: Tamsyn:bold:pixelsize=16:antialias=true:hinting=true
 !URxvt.italicFont: xft:Tamsyn:italic:pixelsize=16:antialias=true:hinting=true
 !URxvt.boldItalicFont: xft:Tamsyn:bold:italic:pixelsize=16:antialias=true
@@ -114,39 +109,27 @@ URxvt.url-select.button:   1
 URxvt.keysym.Control-Shift-C: perl:clipboard:copy
 URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
-
-
-
-
-
-
-!black
-URxvt.color0:     #393939
-!URxvt.color8:     #AF875F
-URxvt.color8:	  #4c4c4c
-!red
-URxvt.color1:     #BF1E2D
-URxvt.color9:     #E7212A
-!green
-URxvt.color2:     #9DBA3A
-URxvt.color10:	  #576d24
-!URxvt.color10:    #A9C938
-!yellow
-URxvt.color3:     #F5B915
-URxvt.color11:    #F7D325
-!blue
-URxvt.color4:     #1CA1DB
-URxvt.color12:    #00AFDA
-!magenta
-URxvt.color5:     #652F90
-URxvt.color13:    #894E9F
-!cyan
-!URxvt.color6:     #EA7D24
-URxvt.color6:	  #2aa198
-URxvt.color14:    #F79321
-!white
-URxvt.color7:     #E7E8E9
-Urxvt.color15:    #F3F3F4
-
-
-
+! Black
+URxvt.color0:  #5c5c5c
+URxvt.color8:  #4c4c4c
+! Red
+URxvt.color1:  #cd0000
+URxvt.color9:  #ff0000
+! Green
+URxvt.color2:  #00cd00
+URxvt.color10: #00ff00
+! Yellow
+URxvt.color3:  #cdcd00
+URxvt.color11: #ffff00
+! Blue
+URxvt.color4:  #1e90ff
+URxvt.color12: #4682b4
+! Magenta
+URxvt.color5:  #cd00cd
+URxvt.color13: #ff00ff
+! Cyan
+URxvt.color6:  #00cdcd
+URxvt.color14: #00ffff
+! White
+URxvt.color7:  #cfcfcf
+URxvt.color15: #a8a8a8
