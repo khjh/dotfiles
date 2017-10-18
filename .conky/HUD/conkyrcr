@@ -12,7 +12,7 @@ conky.config = {
 	own_window = true,
 	own_window_type = 'override',
 	own_window_argb_visual = true,
-	own_window_transparent = true,
+	own_window_transparent = false,
 	own_window_argb_value = 200,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
 	border_inner_margin = 8,
@@ -20,8 +20,8 @@ conky.config = {
 	border_outer_margin = 0,
 	xinerama_head = 2,
 	alignment = 'top_right',
-	gap_x = 12,
-	gap_y = 39,
+	gap_x = 8,
+	gap_y = 36,
 	draw_shades = false,
 	draw_outline = false,
 	draw_borders = false,
@@ -41,9 +41,9 @@ conky.text = [[
 
 
 # NETWORK
-${font xirod:Bold:size=13}${#00FF00}NETWORK ${hr 2}$font
+${font xirod:Bold:size=13}${#00ff00}NETWORK ${hr 2}$font
 
-${font Droid Sans:Bold:size=12}${#00FF00}NETWORK (GENERAL)${stippled_hr}$color$font
+${font Droid Sans:Bold:size=12}${#00ff00}NETWORK (GENERAL)${stippled_hr}$color$font
 $color$font
 Active Interface ${alignr}$gw_iface
 #Public IP${alignr} ${execi 3600 wget -O - http://ip.tupeux.com | tail}
@@ -56,17 +56,17 @@ Packets $alignr In:${tcp_portmon 1 32767 count}  Out: ${tcp_portmon 32768 61000 
 
 
 
-${font Droid Sans:Bold:size=11}${alignc}${#00FF00}NETWORK (WIRELESS) ${stippled_hr}$font$color
+${font Droid Sans:Bold:size=11}${alignc}${#00ff00}NETWORK (WIRELESS) ${stippled_hr}$font$color
 
 
 ${font Droid Sans:Bold:size=11}wlp3s0 $font$alignr ${addr wlp3s0}$font
 SSID${font Droid Sans:size=11}${alignr}${wireless_essid wlp3s0}${font}
-Down: ${#ff0000}${downspeed wlp3s0}/s ${color}(${totaldown wlp3s0})${alignr}Up: ${#00FF00}${upspeed wlp3s0}/s 
+Down: ${#ff0000}${downspeed wlp3s0}/s ${color}(${totaldown wlp3s0})${alignr}Up: ${#00ff00}${upspeed wlp3s0}/s 
 $color(${totalup wlp3s0})
 
-${downspeedgraph wlp3s0 100,230  000000 ff0000} ${alignr}${upspeedgraph wlp3s0 100,230 000000 00FF00}
+${downspeedgraph wlp3s0 100,230  000000 ff0000} ${alignr}${upspeedgraph wlp3s0 100,230 000000 00ff00}
 $alignr${#757575}
-#${color white}Link quality:    ${#00FF00} ${wireless_link_bar 12,350 wlp3s0}$color
+#${color white}Link quality:    ${#00ff00} ${wireless_link_bar 12,350 wlp3s0}$color
 
 
 

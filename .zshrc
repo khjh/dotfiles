@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="kent-green"
+ZSH_THEME="kent-colors"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 

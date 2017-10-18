@@ -20,8 +20,8 @@ let g:airline_left_sep = ''
 "let g:airline_theme='term'
 "let g:airline_theme='ubaryd'
 "let g:airline_theme='laederon'
-"let g:airline_theme='kolor'
-let g:airline_theme='molokai'
+let g:airline_theme='kolor'
+"let g:airline_theme='molokai'
 "let g:airline_theme='powerlineish'
 
 "colorscheme wombat256
@@ -30,9 +30,9 @@ let g:airline_theme='molokai'
 "colorscheme vividchalk
 "colorscheme distinguished
 "colorscheme monokai
-"colorscheme ir_black
+colorscheme ir_black
 "colorscheme gotham
-colorscheme jellybeans 
+"colorscheme jellybeans 
 "colorscheme desertEx
 "colorscheme codeblocks_dark
 
@@ -48,11 +48,11 @@ set nocompatible        " don't use old settings that vi used.
 let mapleader = "\<Space>"
 
 set backspace=2       	" make backspace able to go over end of lines
-set laststatus=2    	"always show the status line
+"set laststatus=2    	"always show the status line
 set t_Co=256        	"set colors to 256
 
 set number          	"show line number on side
-"set nornu           	"do not make the line numbers relative to cursor
+set nornu           	"do not make the line numbers relative to cursor
 set mousehide       	"hide mouse cursor while typing
 set showmode        	"display the current mode
 set cursorline      	"highlight the current line
@@ -74,30 +74,30 @@ syntax enable			"use syntax highlighting
 						" shiftwidth
 
 " Neo bundle stuff
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
-	call neobundle#begin(expand('~/.vim/bundle/'))
-		" Let NeoBundle manage NeoBundle (Required!)
-			NeoBundleFetch 'Shougo/neobundle.vim'
-		" Fuzzy finding for files
-			NeoBundle 'kien/ctrlp.vim'
-		"Move around easier
-			NeoBundle 'Lokaltog/vim-easymotion'
-		"File navigation
-			NeoBundle 'scrooloose/nerdtree'
-		"Coffeescript integration and syntax highlighting
-			NeoBundle 'kchmck/vim-coffee-script'
-		"Vim-Airline
-			NeoBundle 'bling/vim-airline'
-		" Gotham theme
-			NeoBundle 'whatyouhide/vim-gotham'
+"	set runtimepath+=~/.vim/bundle/neobundle.vim/
+"	call neobundle#begin(expand('~/.vim/bundle/'))
+"		" Let NeoBundle manage NeoBundle (Required!)
+"			NeoBundleFetch 'Shougo/neobundle.vim'
+"		" Fuzzy finding for files
+"			NeoBundle 'kien/ctrlp.vim'
+"		"Move around easier
+"			NeoBundle 'Lokaltog/vim-easymotion'
+"		"File navigation
+"			NeoBundle 'scrooloose/nerdtree'
+"		"Coffeescript integration and syntax highlighting
+"			NeoBundle 'kchmck/vim-coffee-script'
+"		"Vim-Airline
+"			NeoBundle 'bling/vim-airline'
+"		" Gotham theme
+"			NeoBundle 'whatyouhide/vim-gotham'
 
-	call neobundle#end()
+"	call neobundle#end()
 
   filetype plugin indent on 			" Required:
 
 	 " If there are uninstalled bundles found on startup,
 	 " this will conveniently prompt you to install them.
-	 NeoBundleCheck
+"	 NeoBundleCheck
 
 
 " Key mappings
