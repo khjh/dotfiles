@@ -10,7 +10,7 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #222
-background = #000000
+background = #dd000000
 ;background-alt = #444
 background-alt=#000000
 ;foreground = ${xrdb:color7:#222}
@@ -98,7 +98,7 @@ label-song-ellipsis = true
 [module/kern]
 type = custom/text
 content = System:
-content-foreground = #7A5ADA
+content-foreground = #447EAC
 
 [module/kernel]
 type = custom/script

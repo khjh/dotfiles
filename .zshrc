@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="kent-colors"
+ZSH_THEME="kent"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -58,7 +58,7 @@ alias tr='trash-rm'
 alias lsTrash='ls ~/.local/share/Trash/files/'
 alias cdTrash='cd ~/.local/share/Trash/files/'
 alias cdS='cd /opt/sabnzbd/'
-
+alias cdb='cd /home/khjh/builds'
 ## Zsh Stuff
 alias eZ='vim /home/khjh/.zshrc'
 alias Z='source ~/.zshrc'
@@ -82,11 +82,9 @@ alias pacse='sudo pacman -Ss'
 alias pacupdate='sudo pacman -Syu'
 alias pacq='sudo pacman -Qs'
 
-## Yaourt
-alias Y='yaourt'
-alias Yrem='yaourt -Rs'
-alias Yq='yaourt -Q'
-alias Yupdate='yaourt -Syu'
+## AUR
+alias aur='cower -s -c  --rsort=votes'
+alias aurupdate='cd ~/builds/ && cower -vdu'
 
 ## X Resources
 alias eX='vim /home/khjh/.Xresources'
@@ -170,4 +168,4 @@ alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-clear
+clear  && /home/khjh/Scripts/pacolor.sh

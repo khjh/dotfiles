@@ -10,17 +10,19 @@ conky.config = {
 	text_buffer_size = 32768,
 	imlib_cache_size = 0,
 	own_window = true,
-	own_window_type = 'override',
+	own_window_type = 'desktop',
 	own_window_argb_visual = true,
-	own_window_argb_value = 150,
 	own_window_transparent = false,
-	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_argb_value = 200,
+	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',sticky,
 	border_inner_margin = 8,
 	border_width = 0,
 	border_outer_margin = 0,
 	xinerama_head = 2,
-	alignment = 'top',
-	gap_x = -478,
+	alignment = 'top_right',
+#	gap_x = 8,
+	gap_x = 100,
+#	gap_y = 36,
 	gap_y = 150,
 	draw_shades = false,
 	draw_outline = false,
@@ -41,9 +43,9 @@ conky.text = [[
 
 
 # NETWORK
-${font xirod:Bold:size=13}${#00FF00}NETWORK ${hr 2}$font
+${font xirod:Bold:size=13}${#00ff00}NETWORK ${hr 2}$font
 
-${font Droid Sans:Bold:size=12}${#00FF00}NETWORK (GENERAL)${stippled_hr}$color$font
+${font Droid Sans:Bold:size=12}${#00ff00}NETWORK (GENERAL)${stippled_hr}$color$font
 $color$font
 Active Interface ${alignr}$gw_iface
 #Public IP${alignr} ${execi 3600 wget -O - http://ip.tupeux.com | tail}
@@ -56,17 +58,17 @@ Packets $alignr In:${tcp_portmon 1 32767 count}  Out: ${tcp_portmon 32768 61000 
 
 
 
-${font Droid Sans:Bold:size=11}${alignc}${#00FF00}NETWORK (WIRELESS) ${stippled_hr}$font$color
+${font Droid Sans:Bold:size=11}${alignc}${#00ff00}NETWORK (WIRELESS) ${stippled_hr}$font$color
 
 
 ${font Droid Sans:Bold:size=11}wlp3s0 $font$alignr ${addr wlp3s0}$font
 SSID${font Droid Sans:size=11}${alignr}${wireless_essid wlp3s0}${font}
-Down: ${#ff0000}${downspeed wlp3s0}/s ${color}(${totaldown wlp3s0})${alignr}Up: ${#00FF00}${upspeed wlp3s0}/s 
+Down: ${#ff0000}${downspeed wlp3s0}/s ${color}(${totaldown wlp3s0})${alignr}Up: ${#00ff00}${upspeed wlp3s0}/s 
 $color(${totalup wlp3s0})
 
-${downspeedgraph wlp3s0 100,230  000000 ff0000} ${alignr}${upspeedgraph wlp3s0 100,230 000000 00FF00}
+${downspeedgraph wlp3s0 100,230  000000 ff0000} ${alignr}${upspeedgraph wlp3s0 100,230 000000 00ff00}
 $alignr${#757575}
-#${color white}Link quality:    ${#00FF00} ${wireless_link_bar 12,350 wlp3s0}$color
+#${color white}Link quality:    ${#00ff00} ${wireless_link_bar 12,350 wlp3s0}$color
 
 
 
@@ -97,6 +99,9 @@ ${font Droid Sans:Bold:size=11}Outbound Connections:  ${tcp_portmon 32768 61000 
    ${tcp_portmon 32768 61000 rhost 14} ${alignr} ${tcp_portmon 32768 61000 rservice 14}
 
 ${color orange}${font xirod:size=13}PACMAN LOG ${hr 2}$color$font ${execi 30 tail -n8 /var/log/pacman.log}
+
+
+
 
 ]];
 
