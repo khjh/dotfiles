@@ -22,7 +22,7 @@ URxvt.scrollTtyKeypress: true
 URxvt*depth:32
 URxvt*foreground:#ADADAD
 !URxvt*background:rgba:0600/0600/0600/dddd
-URxvt*background:rgba:0000/0000/0000/dddd
+URxvt*background:rgba:0000/0000/0000/cccc
 URxvt.foreground: 15
 URxvt.geometry: 128x38
 

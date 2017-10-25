@@ -213,7 +213,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #7A5ADA
-label-connected =   %essid%
+label-connected =  %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>

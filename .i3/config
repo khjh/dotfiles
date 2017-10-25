@@ -36,10 +36,10 @@ font pango:System San Francisco Display 10
 
 #Needed for i3-gaps
 #hide_edge_borders both
-for_window [class="^.*"] border pixel 1
-gaps inner 0
-gaps outer 0
-#new_window 1pixel
+#for_window [class="^.*"] border pixel 1
+#gaps inner 0
+#gaps outer 0
+new_window 1pixel
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -194,7 +194,7 @@ bindsym $mod+r mode "resize"
   client.unfocused        $base02 $base02    $base03 $base0F
   client.urgent           $base02 $base08    $base00 $base0F
 # Start bar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/Git/polybar/launch.sh
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +3% #increase sound volume
