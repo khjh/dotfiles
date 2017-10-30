@@ -59,11 +59,13 @@ alias lsTrash='ls ~/.local/share/Trash/files/'
 alias cdTrash='cd ~/.local/share/Trash/files/'
 alias cdS='cd /opt/sabnzbd/'
 alias cdb='cd /home/khjh/builds'
+alias cdG='cd /home/khjh/Git'
 ## Zsh Stuff
 alias eZ='vim /home/khjh/.zshrc'
 alias Z='source ~/.zshrc'
 alias grepz='cat /home/khjh/.zshrc | grep'
-
+alias grepi='cat /home/khjh/Git/.i3/config | grep'
+alias grepr='cat /home/khjh/.config/ranger/rc.conf  | grep'
 ## Vim Stuff
 alias e='vim'
 alias eV='vim ~/.vimrc'
@@ -77,10 +79,12 @@ alias shutdown='sudo shutdown -P now'
 
 ## Pacman
 alias pac='sudo pacman -S'
-alias pacrem='sudo pacman -Rs'
+alias pacrem='sudo pacman -Rsn'
 alias pacse='sudo pacman -Ss'
 alias pacupdate='sudo pacman -Syu'
 alias pacq='sudo pacman -Qs'
+alias pacdep='sudo pacman -Qdt'
+alias pU='sudo pacman -U'
 
 ## AUR
 alias aur='cower -s -c  --rsort=votes'
@@ -161,7 +165,7 @@ alias img='viewnior'
 alias ee='mousepad'
 alias clock='tty-clock -c -s -C 4'
 alias nzb='/opt/sabnzbd/SABnzbd.py'
-alias win10res='VBoxManage controlvm "win10" setvideomodehint 2200 1350 32'
+alias win10res='VBoxManage controlvm "win10" setvideomodehint 2600 1400 32'
 alias eR='vim /home/khjh/.config/ranger/rc.conf'
 
 alias grep="/usr/bin/grep $GREP_OPTIONS"
