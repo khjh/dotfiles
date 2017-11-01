@@ -150,7 +150,8 @@ alias toggle-wifi='sudo ifconfig wlp3s0 down && sudo ifconfig wlp3s0 up'
 alias wlanspeed='speedometer -r wlp3s0 -t wlp3s0'
 alias ethspeed='speedometer -r enp0s25 -t enp0s25'
 alias itop='sudo iftop -i wlp3s0'
-
+alias dash='glances'
+alias gt='gtop'
 ## Misc
 alias irc='weechat'
 alias MO='mocp -T transparent-background'
