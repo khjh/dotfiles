@@ -45,7 +45,7 @@ new_window 1pixel
 floating_modifier $mod
 
 # Floating Windows
-for_window [instance="VirtualBox"] floating enable
+#for_window [instance="VirtualBox"] floating enable
 for_window [instance="nitrogen"] floating enable
 for_window [instance="gimp"] floating enable
 for_window [instance="feh"] floating enable
@@ -98,7 +98,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-#bindsym $mod+e layout toggle split
+bindsym $mod+g layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -214,12 +214,15 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Set display mode
-exec xrandr --output DVI-D-0 --mode 1920x1200 --pos 0x192 --rotate normal --output HDMI-1 --off --output HDMI-0 --primary --mode 3440x1440 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --mode 1920x1200 --pos 5360x192 --rotate normal
+
+
+exec xrandr --output DVI-D-0 --mode 1920x1200 --pos 0x80 --rotate normal --output HDMI-1 --off --output HDMI-0 --primary --mode 3440x1440 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --mode 1920x1200 --pos 5360x80 --rotate normal
 
 # Startup programs
 exec_always compton -f
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id exec xset -b
+exec --no-startup-id numlockx
 exec_always --no-startup-id /usr/bin/xfce4-power-manager
 #exec_always --no-startup-id /home/khjh/Git/autostart.sh
 exec --no-startup-id nm-applet

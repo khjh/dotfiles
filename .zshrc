@@ -64,7 +64,8 @@ alias cdG='cd /home/khjh/Git'
 alias eZ='vim /home/khjh/.zshrc'
 alias Z='source ~/.zshrc'
 alias grepz='cat /home/khjh/.zshrc | grep'
-
+alias grepi='cat /home/khjh/Git/.i3/config | grep'
+alias grepr='cat /home/khjh/.config/ranger/rc.conf  | grep'
 ## Vim Stuff
 alias e='vim'
 alias eV='vim ~/.vimrc'
@@ -83,6 +84,11 @@ alias pacse='sudo pacman -Ss'
 alias pacupdate='sudo pacman -Syu'
 alias pacq='sudo pacman -Qs'
 alias pacdep='sudo pacman -Qdt'
+<<<<<<< HEAD
+=======
+alias pU='sudo pacman -U'
+
+>>>>>>> 6b2cbb8024e3bfac0639fff3823dc5630689a429
 ## AUR
 alias aur='cower -s -c  --rsort=votes'
 alias aurupdate='cd ~/builds/ && cower -vdu'
@@ -147,7 +153,8 @@ alias toggle-wifi='sudo ifconfig wlp3s0 down && sudo ifconfig wlp3s0 up'
 alias wlanspeed='speedometer -r wlp3s0 -t wlp3s0'
 alias ethspeed='speedometer -r enp0s25 -t enp0s25'
 alias itop='sudo iftop -i wlp3s0'
-
+alias dash='glances'
+alias gt='gtop'
 ## Misc
 alias irc='weechat'
 alias MO='mocp -T transparent-background'
@@ -162,11 +169,15 @@ alias img='viewnior'
 alias ee='mousepad'
 alias clock='tty-clock -c -s -C 4'
 alias nzb='/opt/sabnzbd/SABnzbd.py'
-alias win10res='VBoxManage controlvm "win10" setvideomodehint 2200 1350 32'
+alias win10res='VBoxManage controlvm "win10" setvideomodehint 2600 1400 32'
 alias eR='vim /home/khjh/.config/ranger/rc.conf'
 
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+<<<<<<< HEAD
 clear && /home/khjh/Scripts/pacolor.sh
+=======
+clear 
+>>>>>>> 6b2cbb8024e3bfac0639fff3823dc5630689a429

@@ -12,14 +12,14 @@
 ;background = #222
 background = #dd000000
 ;background-alt = #444
-background-alt=#000000
+background-alt=#dd000000
 ;foreground = ${xrdb:color7:#222}
 #foreground = #dfdfdf
 foreground = #747474
 #foreground = #576d24
 foreground-alt = #555
 #primary = #7A5ADA
-primary = #ff0000
+primary = #407ee7
 #secondary = #e60053
 secondary = #00000000
 alert = #bd2c40
@@ -98,7 +98,7 @@ label-song-ellipsis = true
 [module/kern]
 type = custom/text
 content = System:
-content-foreground = #447EAC
+content-foreground = #407ee7
 
 [module/kernel]
 type = custom/script
@@ -300,9 +300,9 @@ label-active-font=1
 label-open = 
 label-open-font=4
 ;label-open-foreground = ${colors.secondary}
-label-open-foreground = #447EAC
+label-open-foreground = #407ee7
 label-close =  cancel
-label-close-foreground = #447EAC
+label-close-foreground = #407ee7
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 ;offset-y= 10
