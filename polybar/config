@@ -33,7 +33,7 @@ radius = 0
 fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
-#bottom = true
+bottom = true
 line-size = 3
 line-color = #f00
 

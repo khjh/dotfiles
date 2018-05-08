@@ -37,8 +37,8 @@ font pango:System San Francisco Display 10
 #Needed for i3-gaps
 #hide_edge_borders both
 #for_window [class="^.*"] border pixel 1
-#gaps inner 0
-#gaps outer 0
+gaps inner 0
+gaps outer 0
 new_window 1pixel
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -125,10 +125,10 @@ set $workspace9 "9"
 
 
 # Lock workspaces on side monitors
-set $monitor2 DVI-D-0 ## force ws8 on left monitor
-set $monitor3 DP-0  ##force ws9 on right  monitor
-workspace 8 output $monitor2
-workspace 9 output $monitor3
+#set $monitor2 DVI-D-0 ## force ws8 on left monitor
+#set $monitor3 DP-0  ##force ws9 on right  monitor
+#workspace 8 output $monitor2
+#workspace 9 output $monitor3
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
