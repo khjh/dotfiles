@@ -49,6 +49,7 @@ floating_modifier $mod
 for_window [instance="nitrogen"] floating enable
 for_window [instance="gimp"] floating enable
 for_window [instance="feh"] floating enable
+for_window [instance="viewnor"] floating enable
 for_window [instance="Thunar"] floating enable
 for_window [instance="teamviewer"] floating enable
 for_window [instance="Steam"] floating enable

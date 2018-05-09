@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="powerline"
+ZSH_THEME="bira"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -84,11 +84,8 @@ alias pacse='sudo pacman -Ss'
 alias pacupdate='sudo pacman -Syu'
 alias pacq='sudo pacman -Qs'
 alias pacdep='sudo pacman -Qdt'
-<<<<<<< HEAD
-=======
 alias pU='sudo pacman -U'
 
->>>>>>> 6b2cbb8024e3bfac0639fff3823dc5630689a429
 ## AUR
 alias aur='cower -s -c  --rsort=votes'
 alias aurupdate='cd ~/builds/ && cower -vdu'
@@ -176,8 +173,4 @@ alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-<<<<<<< HEAD
-clear && /home/khjh/Scripts/pacolor.sh
-=======
-clear 
->>>>>>> 6b2cbb8024e3bfac0639fff3823dc5630689a429
+clear
