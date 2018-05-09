@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="bira"
+ZSH_THEME="powerline"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 

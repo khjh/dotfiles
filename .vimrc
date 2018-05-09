@@ -1,7 +1,7 @@
 set paste
 set pastetoggle=<F2>
 set mouse=a
-"set foldmethod=indent
+set foldmethod=indent
 set rnu
 
 let g:Powerline_symbols = "fancy"
@@ -21,7 +21,7 @@ let g:airline_left_sep = ''
 "let g:airline_theme='ubaryd'
 "let g:airline_theme='laederon'
 "let g:airline_theme='kolor'
-"let g:airline_theme='molokai'
+let g:airline_theme='molokai'
 "let g:airline_theme='powerlineish'
 
 "colorscheme wombat256
@@ -29,8 +29,8 @@ let g:airline_left_sep = ''
 "colorscheme railscasts
 "colorscheme vividchalk
 "colorscheme distinguished
-"colorscheme monokai
-colorscheme ir_black
+colorscheme monokai
+"colorscheme ir_black
 "colorscheme gotham
 "colorscheme jellybeans 
 "colorscheme desertEx
@@ -47,7 +47,7 @@ set nocompatible        " don't use old settings that vi used.
 let mapleader = "\<Space>"
 
 set backspace=2       	" make backspace able to go over end of lines
-"set laststatus=2    	"always show the status line
+set laststatus=2    	"always show the status line
 set t_Co=256        	"set colors to 256
 
 set number          	"show line number on side

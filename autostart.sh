@@ -19,5 +19,5 @@ pkill conky
 sleep 3
 #run "conky -c /home/khjh/.config/awesome/conky/conkyrc"
 #run "conky -c /home/khjh/Scripts/start_HUD.sh"
-run "conky -c /home/khjh/Git/.conky/HUD/conkyrcl"
+#run "conky -c /home/khjh/Git/.conky/HUD/conkyrcl"
 #run "conky -c /home/khjh/Git/.conky/HUD/conkyrcr"
