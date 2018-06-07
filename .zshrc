@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="powerline"
+ZSH_THEME="clean"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -89,7 +89,7 @@ alias pU='sudo pacman -U'
 ## AUR
 alias aur='cower -s -c  --rsort=votes'
 alias aurupdate='cd ~/builds/ && cower -vdu'
-
+alias Y='yaourt'
 ## X Resources
 alias eX='vim /home/khjh/.Xresources'
 alias XTR='xrdb -merge /home/khjh/.Xresources'
@@ -173,4 +173,4 @@ alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-clear
+clear 

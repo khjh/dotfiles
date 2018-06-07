@@ -5,13 +5,13 @@ URxvt.iso14755_52: off
 URxvt.meta8: true
 URxvt.depth: 32
 URxvt.iconFile: /usr/share/icons/Humanity/apps/128/utilities-terminal.svg
-URxvt.metaSendsEscape: truee
+URxvt.metaSendsEscape: true
 
 URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 
 URxvt.scrollBar: off
-URxvt.cursorBlink: true
+URxvt.cursorBlink: false
 URxvt.cursorUnderline: false
 URxvt.cursorColor:#757575
 URxvt.saveLines: 10000
@@ -49,17 +49,23 @@ URxvt.geometry: 128x38
 
 
 !DejaVu Sans
-URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=19:antialias=true:hinting=true
-URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=19:antialias=true:hinting=true
-URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=19:antialias=true:hinting=true
-URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=19:antialias=true
+URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=20:antialias=true:hinting=true
+URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=20:antialias=true:hinting=true
+URxvt.italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=20:antialias=true:hinting=true
+URxvt.boldItalicFont: xft:DejaVu Sans Mono for Powerline:bold:italic:pixelsize=20:antialias=true
 
 
-! Tamsyn
-!URxvt.font: xft:Tamsyn:pixelsize=16:antialias=true:hinting=true
-!URxvt.boldFont: xft: Tamsyn:bold:pixelsize=16:antialias=true:hinting=true
-!URxvt.italicFont: xft:Tamsyn:italic:pixelsize=16:antialias=true:hinting=true
-!URxvt.boldItalicFont: xft:Tamsyn:bold:italic:pixelsize=16:antialias=true
+! Terminus
+!URxvt.font: xft:Terminus-:pixelsize=20:antialias=true:hinting=true
+!URxvt.boldFont: xft: Terminus:bold:pixelsize=20:antialias=true:hinting=true
+!URxvt.italicFont: xft:Terminus:italic:pixelsize=20:antialias=true:hinting=true
+!URxvt.boldItalicFont: xft:Terminus:bold:italic:pixelsize=20:antialias=true
+
+!Sanfran
+!URxvt.font: xft:San Francisco Display:pixelsize=22:antialias=true:hinting=true
+!URxvt.boldItalicFont: xft:Monofur Bold for Powerline:italic:pixelsize=17:antialias=true
+!URxvt.boldFont: xft:Monofur Bold for Powerline:pixelsize=22:antialias=true:hinting=true
+!URxvt.italicFont: xft:Monofur Italic for Powerline:pixelsize=22:antialias=true:hinting=true
 
 
 ! Monofur
