@@ -21,6 +21,8 @@ let g:airline_theme='simple'
 "let g:airline_theme='ubaryd'
 "let g:airline_theme='laederon'
 "let g:airline_theme='kolor'
+"      =======
+let g:airline_theme='kolor'
 "let g:airline_theme='molokai'
 "let g:airline_theme='powerlineish'
 

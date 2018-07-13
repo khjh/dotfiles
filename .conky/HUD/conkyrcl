@@ -6,7 +6,10 @@ total_run_times 0
 net_avg_samples 1
 cpu_avg_samples 2
 own_window_type override
+<<<<<<< HEAD
 own_window_transparent no
+=======
+>>>>>>> d1f3f72dcb102788e156db91381d25c96dac9167
 own_window_hints undecorated,below,skip_taskbar,skip_pager,sticky
 
 imlib_cache_size 0
@@ -30,7 +33,11 @@ own_window yes
 
 own_window_colour 000000
 own_window_argb_visual yes
+<<<<<<< HEAD
 own_window_argb_value 175
+=======
+own_window_argb_value 0
+>>>>>>> d1f3f72dcb102788e156db91381d25c96dac9167
 
 alignment top_left
 gap_y 55

@@ -39,7 +39,11 @@ font pango:System San Francisco Display 7
 
 #Needed for i3-gaps
 #hide_edge_borders both
+<<<<<<< HEAD
 for_window [class="^.*"] border pixel 2
+=======
+#for_window [class="^.*"] border pixel 2
+>>>>>>> d1f3f72dcb102788e156db91381d25c96dac9167
 gaps inner 10
 #gaps outer 0
 #new_window normal 0 px
@@ -229,6 +233,6 @@ exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id exec xset -b
 exec --no-startup-id numlockx
 exec_always --no-startup-id /usr/bin/xfce4-power-manager
-#exec_always --no-startup-id /home/khjh/Git/autostart.sh
+exec_always --no-startup-id /home/khjh/Git/autostart.sh
 exec --no-startup-id nm-applet
 exec_always --no-startup-id mpd

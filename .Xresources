@@ -17,17 +17,28 @@ URxvt.externalBorder: 0
 URxvt.scrollBar: off
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
+<<<<<<< HEAD
 URxvt.cursorColor:#ff25ff
+=======
+URxvt.cursorColor:#747474
+>>>>>>> d1f3f72dcb102788e156db91381d25c96dac9167
 URxvt.saveLines: 10000
 URxvt.scrollTtyOutput:   false
 URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
 
 URxvt*depth:32
+<<<<<<< HEAD
 !URxvt*foreground:#ADADAD
 URxvt*background:rgba:0000/0000/0000/dddd
 !URxvt*background:rgba:0600/0600/0600/eeee
 !URxvt.foreground: 15
+=======
+URxvt*foreground:#ADADAD
+!URxvt*background:rgba:0600/0600/0600/dddd
+URxvt*background:rgba:0000/0000/0000/cccc
+URxvt.foreground: 15
+>>>>>>> d1f3f72dcb102788e156db91381d25c96dac9167
 URxvt.geometry: 128x38
 
 !Droid Sans
