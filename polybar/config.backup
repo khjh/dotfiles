@@ -10,23 +10,24 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #222
-background = #ee000000
+;background = #dd000000
+background = #dd002029
 ;background-alt = #444
-background-alt=#000000
+background-alt=#dd002029
 ;foreground = ${xrdb:color7:#222}
 #foreground = #dfdfdf
 foreground = #747474
 #foreground = #576d24
 foreground-alt = #555
 #primary = #7A5ADA
-primary = #ff0000
+primary = #407ee7
 #secondary = #e60053
 secondary = #00000000
 alert = #bd2c40
-[bar/topbar]
+[bar/example]
 monitor = ${env:MONITOR:HDMI-0}
 width = 100%
-height = 30
+height = 26
 #offset-x = 1%
 #offset-y = 1%
 radius = 0
@@ -43,19 +44,19 @@ border-color = #000000
 padding-left = 0
 padding-right = 0
 
-module-margin-left = 3
-module-margin-right = 3
+module-margin-left = 1
+module-margin-right = 1
 
-font-0 = Droid Sans:pixelsize=18;2
-font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
-font-2 = FontAwesome:pixelsize=14;2
-font-3 = FontAwesome:pixelsize=16;3
+font-0 = Terminus:pixelsize=24:Markup:style=bold;2:antialias=false
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = FontAwesome:pixelsize=12;2
+font-3 = FontAwesome:pixelsize=14;3
 
 
 #bspwm
 modules-left = i3 powermenu mpd
 modules-center = xwindow
-modules-right =   vpncheck kern  kernel  wlan eth cpu memory volume date 
+modules-right =   volume kern  kernel vpncheck  wlan eth cpu memory date 
 
 tray-position = right
 ;tray-offset-x= -100
@@ -90,15 +91,15 @@ icon-play  = 
 icon-next  = 
 icon-seekf = 
 
-label-offline = mpd is offline
-label-song = %title%
+
+
 label-song-maxlen = 100
 label-song-ellipsis = true
 
 [module/kern]
 type = custom/text
 content = System:
-content-foreground = #7A5ADA
+content-foreground = #747474
 
 [module/kernel]
 type = custom/script
@@ -106,15 +107,13 @@ exec = uname -r
 tail = false
 interval = 1024
 label-foreground=#747474
-label-underline= #7A5ADA
-
 
 [module/vpncheck]
 type = custom/script
 exec = pgrep openconnect
 interval = 5
 label = vpn
-format-underline = #00cdcd
+;format-underline = #00cdcd
 format-prefix = "   "
 format-prefix-foreground = #00cdcd
 
@@ -197,16 +196,16 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
-label = Cpu: %percentage%%
+;format-underline = #f90000
+label = Cpu:%percentage%%
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f5911a
-label = Mem:  %percentage_used%%
+;format-underline = #00ff00
+label = Mem:%percentage_used%%
 
 [module/wlan]
 type = internal/network
@@ -214,8 +213,8 @@ interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #00ad9c
-label-connected =   %essid%
+;format-connected-underline = #7A5ADA
+label-connected =  %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -235,7 +234,7 @@ type = internal/network
 interface = enp2s0
 interval = 3.0
 
-format-connected-underline = #447EAC
+;format-connected-underline = #447EAC
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -248,18 +247,18 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1 
 
 date =
 date-alt = " %Y-%m-%d"
 
-;time = %H:%M
-time =  %d/%m/%Y     %H:%M
+time = "%H:%M "
+;time =  %d/%m/%Y    %H:%M  
 time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #407ee7
+;format-underline = #407ee7
 
 label = %date% %time%
 
@@ -274,24 +273,24 @@ format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
-bar-volume-width = 15
-bar-volume-foreground-0 = #00ff00
-bar-volume-foreground-1 = #00ff00
-bar-volume-foreground-2 = #00ff00
-bar-volume-foreground-3 = #00ff00
-bar-volume-foreground-4 = #00ff00
-bar-volume-foreground-5 = #f5a70a
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #55aaff
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = False
-bar-volume-indicator = "   "
+bar-volume-indicator = │
 bar-volume-indicator-font = 3
-bar-volume-indicator-foreground = #00ff00
-bar-volume-fill = 
+bar-volume-indicator-foreground = #55aa55
+bar-volume-fill = ━
 bar-volume-fill-font = 3
-bar-volume-empty =   
+bar-volume-empty = ━
 bar-volume-empty-font = 3
 bar-volume-empty-foreground = ${colors.foreground-alt}
-format-volume-underline = #00ff00
+;format-volume-underline = #d5911a
 
 
 [module/powermenu]
@@ -299,12 +298,12 @@ type = custom/menu
 
 format-spacing = 1
 label-active-font=1
-label-open = 
+label-open = 
 label-open-font=4
 ;label-open-foreground = ${colors.secondary}
-label-open-foreground = #447EAC
+label-open-foreground = #407ee7
 label-close =  cancel
-label-close-foreground = #447EAC
+label-close-foreground = #407ee7
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 ;offset-y= 10

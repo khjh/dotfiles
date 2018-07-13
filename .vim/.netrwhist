@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/khjh/Git/.oh-my-zsh/themes'
 let g:netrw_dirhist_2='/home/khjh/Git/.conky/HUD'
 let g:netrw_dirhist_3='/etc/cron.hourly'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/home/khjh/.config/rtv'
 let g:netrw_dirhist_5='/home/khjh/Git/.conky'
 let g:netrw_dirhist_6='/home/khjh/.config'
 let g:netrw_dirhist_7='/usr/share/themes/Adwaita'
+let g:netrw_dirhist_8='/home/khjh/.config'

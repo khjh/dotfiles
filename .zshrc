@@ -1,9 +1,9 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+	# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh 
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="clean"
+ZSH_THEME="powerline"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -60,6 +60,8 @@ alias cdTrash='cd ~/.local/share/Trash/files/'
 alias cdS='cd /opt/sabnzbd/'
 alias cdb='cd /home/khjh/builds'
 alias cdG='cd /home/khjh/Git'
+alias roms='cd /home/khjh/Documents/N64roms'
+alias GL='glances'
 ## Zsh Stuff
 alias eZ='vim /home/khjh/.zshrc'
 alias Z='source ~/.zshrc'
@@ -70,6 +72,8 @@ alias grepr='cat /home/khjh/.config/ranger/rc.conf  | grep'
 alias e='vim'
 alias eV='vim ~/.vimrc'
 
+## Geany
+alias ge='geany'
 ## Processes
 alias PS='ps -ef | grep'
 alias PG='pgrep -lf'
@@ -85,6 +89,7 @@ alias pacupdate='sudo pacman -Syu'
 alias pacq='sudo pacman -Qs'
 alias pacdep='sudo pacman -Qdt'
 alias pU='sudo pacman -U'
+alias pacclean='sudo pacman -Rns $(pacman -Qtdq)'
 
 ## AUR
 alias aur='cower -s -c  --rsort=votes'
@@ -157,7 +162,7 @@ alias irc='weechat'
 alias MO='mocp -T transparent-background'
 alias MP='ncmpcpp'
 alias mixer='alsamixer --no-color'
-alias news='newsbeuter'
+alias news='newsboat'
 alias tm='tmux'
 alias sw='telnet towel.blinkenlights.nl'
 alias reddit='rtv'
@@ -168,7 +173,7 @@ alias clock='tty-clock -c -s -C 4'
 alias nzb='/opt/sabnzbd/SABnzbd.py'
 alias win10res='VBoxManage controlvm "win10" setvideomodehint 2600 1400 32'
 alias eR='vim /home/khjh/.config/ranger/rc.conf'
-
+alias T='transmission-cli'
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)
