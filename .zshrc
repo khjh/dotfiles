@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="powerline"
+ZSH_THEME="gentoo"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
@@ -108,8 +108,8 @@ alias eW='vim /home/khjh/.config/awesome/wi.lua'
 
 
 ## Arch logs
-alias J='clear && journalctl -fo short'
-alias P='clear && tail -f /var/log/pacman.log'
+alias J='journalctl -fo short'
+alias P='tail -f /var/log/pacman.log'
 
 ## i3 Stuff
 alias eI='vim /home/khjh/.i3/config'
@@ -174,6 +174,11 @@ alias nzb='/opt/sabnzbd/SABnzbd.py'
 alias win10res='VBoxManage controlvm "win10" setvideomodehint 2600 1400 32'
 alias eR='vim /home/khjh/.config/ranger/rc.conf'
 alias T='transmission-cli'
+alias WE='curl wttr.in/~Bornholm'
+alias TW='rainbowstream'
+
+
+
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 plugins=(vi-mode zsh-syntax-highlighting)

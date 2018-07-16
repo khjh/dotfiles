@@ -26,8 +26,8 @@ set $base0E #c0b7f9
 set $base0F #747474
 #set $base0F #252936
 #set $base0G #747474DD
-set $base0H #232323
-#set $base0H #000000DD
+set $base0H #000000
+#set $base0H #002029dd
 #set $base0J #3988caa
 set $base0J	#747474
 set $base0K #00000000
@@ -42,7 +42,7 @@ font pango:System San Francisco Display 7
 for_window [class="^.*"] border pixel 2
 #for_window [class="^.*"] border pixel 2
 gaps inner 10
-#gaps outer 0
+gaps outer 0
 #new_window normal 0 px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
