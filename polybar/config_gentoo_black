@@ -19,8 +19,8 @@ background-alt=#dd000000
 foreground = #747474
 #foreground = #576d24
 foreground-alt = #555
-primary = #7A5ADA
-#primary = #5555FF
+#primary = #7A5ADA
+primary = #407ee7
 #secondary = #e60053
 secondary = #00000000
 alert = #bd2c40
@@ -47,10 +47,10 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Deja Vu:pixelsize=18;2
+font-0 = Terminus:pixelsize=30:Markup:style=bold;2:antialias=false
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = FontAwesome:pixelsize=14;2
-font-3 = FontAwesome:pixelsize=16;3
+font-2 = FontAwesome:pixelsize=12;2
+font-3 = FontAwesome:pixelsize=14;3
 
 
 #bspwm
@@ -61,7 +61,7 @@ modules-right =   volume kern  kernel vpncheck  wlan eth cpu memory date
 tray-position = right
 ;tray-offset-x= -100
 tray-padding = 0
-tray-maxsize = 30
+;tray-scale = 1
 ;tray-transparent = false
 ;tray-background = #0c000000
 
@@ -82,21 +82,23 @@ tray-maxsize = 30
 type = internal/mpd
 format-online = <icon-prev>  <icon-stop>   <icon-play><icon-pause>  <icon-next>      <label-song> 
 
-icon-prev  =  "  "
-icon-seekb =  " "
-icon-stop  =  " "
-icon-pause =  " "
-icon-play  =  " "
-icon-next  =  " "
-icon-seekf =  " "
 
-label-song = %title%
+icon-prev  = 
+icon-seekb = 
+icon-stop  = 
+icon-pause = 
+icon-play  = 
+icon-next  = 
+icon-seekf = 
+
+
+
 label-song-maxlen = 100
 label-song-ellipsis = true
 
 [module/kern]
 type = custom/text
-content = "  System:"
+content = System:
 content-foreground = #747474
 
 [module/kernel]
@@ -113,7 +115,7 @@ interval = 5
 label = vpn
 ;format-underline = #00cdcd
 format-prefix = "   "
-format-prefix-foreground = #5555FF
+format-prefix-foreground = #00cdcd
 
 
 [module/xwindow]
@@ -195,7 +197,7 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #f90000
-label = " Cpu:%percentage%%"
+label = Cpu:%percentage%%
 
 [module/memory]
 type = internal/memory
@@ -203,7 +205,7 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #00ff00
-label = " Mem:%percentage_used%%" 
+label = Mem:%percentage_used%%
 
 [module/wlan]
 type = internal/network
@@ -212,7 +214,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 ;format-connected-underline = #7A5ADA
-label-connected = "   %essid%"
+label-connected =  %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -250,7 +252,7 @@ interval = 1
 date =
 date-alt = " %Y-%m-%d"
 
-time = " %H:%M "
+time = "%H:%M "
 ;time =  %d/%m/%Y    %H:%M  
 time-alt = %H:%M:%S
 
@@ -259,7 +261,6 @@ format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #407ee7
 
 label = %date% %time%
-
 
 [module/volume]
 type = internal/volume
@@ -272,36 +273,37 @@ format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
-bar-volume-width = 15
-bar-volume-foreground-0 = #7A5ADA
-bar-volume-foreground-1 = #7A5ADA
-bar-volume-foreground-2 = #7A5ADA
-bar-volume-foreground-3 = #7A5ADA
-bar-volume-foreground-4 = #7A5ADA
-bar-volume-foreground-5 = #f5a70a
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #55aaff
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = False
-bar-volume-indicator = "   "
+bar-volume-indicator = │
 bar-volume-indicator-font = 3
-bar-volume-indicator-foreground = #FF5555
-bar-volume-fill = 
+bar-volume-indicator-foreground = #55aa55
+bar-volume-fill = ━
 bar-volume-fill-font = 3
-bar-volume-empty =   
+bar-volume-empty = ━
 bar-volume-empty-font = 3
 bar-volume-empty-foreground = ${colors.foreground-alt}
-;format-volume-underline = #00ff00
+;format-volume-underline = #d5911a
+
 
 [module/powermenu]
 type = custom/menu
 
 format-spacing = 1
 label-active-font=1
-label-open ="   "
+label-open = 
 label-open-font=4
 ;label-open-foreground = ${colors.secondary}
-label-open-foreground = #7A5ADA
+label-open-foreground = #407ee7
 label-close =  cancel
-label-close-foreground = #7A5ADA
+label-close-foreground = #407ee7
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 ;offset-y= 10

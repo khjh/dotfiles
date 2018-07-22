@@ -28,7 +28,7 @@ set $base0F #747474
 #set $base0G #747474DD
 set $base0H #000000
 #set $base0H #002029dd
-#set $base0J #3988caa
+#set $base0J #ff5555
 set $base0J	#747474
 set $base0K #00000000
 # Font for window titles. Will also be used by the bar unless a different font

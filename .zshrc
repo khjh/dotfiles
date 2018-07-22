@@ -3,17 +3,21 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="gentoo"
+ZSH_THEME="lambda-gentoo"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-
+# Plugins
 plugins=(git)
+plugins=(vi-mode zsh-syntax-highlighting)
+
+
 
 source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 export PATH="/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/khjh/.local/bin:/home/khjh/bin"
@@ -178,9 +182,9 @@ alias WE='curl wttr.in/~Bornholm'
 alias TW='rainbowstream'
 
 
-
+# grep
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
-plugins=(vi-mode zsh-syntax-highlighting)
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
 clear 
